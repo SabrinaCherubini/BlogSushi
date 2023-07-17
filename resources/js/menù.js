@@ -28,6 +28,28 @@ fetch('../resources/menù.json')
   }
 
    Category();
+
+//    funzione per creare cards dei Sushi 
+let wrapperCards=document.querySelector("#wrapperCards");
+function CreateCards(){
+    data.forEach(element=>{
+        let div=document.createElement('div');
+        div.classList.add("col-3","me-2", "mb-4");
+        div.innerHTML=`<div class="card position-relative align-items-center justify-content-center  gradient-card" >
+        <div class="overflow-hidden">
+          <img src="../media/carousel1.jpg" class="card-img-top card-img-zoom" alt="...">
+        </div>
+        <h5 class="card-title">${element.categoria}</h5>
+        <p class="card-text">${element.pezzi}</p>
+        </div>`;
+        wrapperCards.appendChild(div);
+
+    })
+
+
+}
+CreateCards();
+
 })
 
 
