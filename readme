@@ -1,0 +1,10 @@
+JSON/(JavaScript Object Notation) è un formato/estensione per lo scambio dati, più semplice di altri da leggere dall’esterno e da scrivere, ed altrettanto agevole per i linguaggi di programmazione da gestire. 
+Esso trasforma gli ogg. in stringa per poter essere manipolato.
+
+
+
+possiamo avere un file.json interno al nostro prog o esterno collegando appunto l' API presa da un sito web : 
+API application programming Interface nella fetch(metti percorso webAPI fornito dal sito es.openweather)
+
+
+NB . per le card l img deve essere messa un div per poter gestire la dimensione e non far fuoriscire lo zoom aggiungendo la classe overflow-hidden al div . 

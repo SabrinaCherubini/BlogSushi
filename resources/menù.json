@@ -1,0 +1,60 @@
+[
+    { "id": 1,
+       "categoria": "Nigiri",
+        "tipo": "salmone",
+        "pezzi": 6,
+        "prezzo": 10.99
+     
+    },
+    {"id":2 ,
+    "categoria":"Nigiri",
+        "tipo": "granchio",
+        "pezzi": 8,
+        "prezzo": 12.99
+       
+    
+    },
+    {"id":3 ,
+    "categoria":"Sashimi",
+        "tipo": "salmone",
+        "pezzi": 12,
+        "prezzo": 15.99
+      
+       
+    }, 
+    
+    {"id":4 ,
+    "categoria":"Hosomaki",
+        "tipo": "tonno",
+        "pezzi": 4,
+        "prezzo": 7
+     
+    },
+
+    {"id": 5,
+    "categoria":"Uramaki",
+        "tipo": "salmone cotto",
+        "pezzi": 6,
+        "prezzo": 10
+       
+    },
+
+    {"id": 6,
+    "categoria":"EbiTempura",
+        "tipo": "gamberetto cotto",
+        "pezzi": 6,
+        "prezzo": 8
+      
+    },
+    
+    {"id":7 ,
+    "categoria":"Salmone",
+        "tipo": "tonno",
+        "pezzi": 12,
+        "prezzo": 15.99
+      
+       
+    }
+
+
+]

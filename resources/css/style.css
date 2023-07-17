@@ -1,0 +1,132 @@
+
+/* palette */
+:root{
+    --acc:#bba14f;
+    --sec:white;
+    --main: black; 
+}
+
+
+
+/* Font */
+*{
+ font-family: 'Poppins', sans-serif;
+ font-size: 17px;
+ color:aliceblue;
+}
+
+h1{
+    color:var(--acc);
+
+}
+
+
+/* navbar */
+.Logo{
+    width: 80px;
+    height: 80px;
+    }
+
+
+
+
+.link:hover{
+    color:var(--acc) !important;
+}
+
+
+.pnavbar{
+    padding-left: 7% ;
+    padding-right:7% ;
+}
+
+/* main */
+
+.star{
+    color:#bba14f;
+}
+.border{
+border-color:var(--acc)  !important;
+border-width: 2px !important;
+}
+
+/* h1 header */
+.scroll{
+    z-index: 999;
+    top: 56%;
+    left: 70%;
+    color:var(--acc); 
+    letter-spacing:8px;
+    opacity: 70%;
+    text-shadow: 2px 2px 5px orangered;
+    animation-name: header;
+    animation-duration: 6s;
+    
+}
+
+/* animation h1 */
+@keyframes header
+ { 
+    from{opacity:0%;}
+    to{opacity:100%;}   
+ }
+ 
+
+ /* swiper */
+ html,
+ body {
+   position: relative;
+   height: 100%;
+ }
+
+ body {
+   background: #eee;
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+ }
+ .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .margin{
+  margin-top: 100px;
+  }
+    
+/* cards */
+.card-img-zoom:hover{
+    transform: scale(1.5); 
+   
+}
+
+.card-img-zoom{
+  transition: 1s;
+}
+
+.card {
+  background: linear-gradient(to right, #09090a83, #e2c72dda);
+}
+
+
+/* bottoni categorie */
+.btn:hover{
+  background: linear-gradient(to right, #09090a83, #e2c72dda);
+}
+
+/* Accordion */
