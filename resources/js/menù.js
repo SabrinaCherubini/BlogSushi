@@ -5,7 +5,7 @@ fetch('../resources/menù.json')
     // data è un ARRAY con tutti i dati json ed ha scope LOCALE xciò deve essere fatto tutto dentro la fetch
     // console.log(data);  
 
-    // per accedere a ogni singolo sushi perciò ogg. (element = ogni singolo sushi) ma dobiamo filtrare categorie uniche senza ripetizioni
+    // per accedere a ogni singolo sushi perciò ogg. (element = ogni singolo sushi) ma dobbiamo filtrare categorie uniche senza ripetizioni
     function Category(){
         let uniqueCategories=[];
     data.forEach(element => { 
@@ -14,7 +14,7 @@ fetch('../resources/menù.json')
         }
     });
 
-    console.log(uniqueCategories); // crudo cotto sashimi
+    console.log(uniqueCategories); // uramaki carpaccio sashimi etc
     // dobbiamo creare un buttone per ogni categoria 
     let wrapper=document.querySelector("#wrapper"); // catturiamo il contenitore dall'html
     uniqueCategories.forEach(element=>{
@@ -60,7 +60,7 @@ let btnCategories=document.querySelectorAll(".btnCategory"); //catturo tutti i b
 console.log(btnCategories);
 // creo il filtro
 function filterbyCategory(category){
-    let filtered=data.filter(sushi=>sushi.categoria==category)
+    let filtered=data.filter(sushi=>sushi.categoria==category)  // ti salva un nuovo array con le categorie filtrate
     CreateCards(filtered); 
 }
 
@@ -76,9 +76,38 @@ btnCategories.forEach(button=>{ //per ogni bottone
 })
  
 
+// RANGE PREZZO MASSIMO
+let range=document.querySelector("#Range");
+let priceRange=document.querySelector("#priceRange");
+// console.log(typeof(range));
+
+// estrapoliamo solo i prezzi da data creando un nuovo array con map()
+let prices=data.map(element=>element.prezzo);
+console.log(prices);
+let Maxprice=Math.max(...prices);  // ... perchè array
+console.log(Maxprice);
+
+range.max=Maxprice;   //del tag range max="15,99" accedo alla proprietà
+range.value=Maxprice;  // value equivale la posizione esatta del pallino del range
+priceRange.innerHTML=`${Maxprice}&euro;`
+
+
+
+//FILTRO PER PREZZO
+
+function filterByPrice(value){
+    let filteredPrice=data.filter(element=>element.prezzo<=value);
+}
+
+    range.addEventListener('input',()=>{ 
+        // console.log(range.value)
+        filterByPrice(range.value);
+      })
+   
+   
+   
 
 })
-
 
 
 
