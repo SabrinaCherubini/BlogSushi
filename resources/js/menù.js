@@ -20,7 +20,7 @@ fetch('../resources/menù.json')
     uniqueCategories.forEach(element=>{
         let div= document.createElement('div');
         div.classList.add("col-md-2", "d-flex", "justify-content-around", "col-12", "my-5" );
-        div.innerHTML=`<h3 class="btn btn-outline-light id="${element}"> ${element}</h3>
+        div.innerHTML=`<h3 class="btn btnCategory btn-outline-light" id="${element}"> ${element}</h3>
         </div>`;
    wrapper.appendChild(div); // dove.appendchild(cosa appendere)
 
@@ -31,7 +31,9 @@ fetch('../resources/menù.json')
 
 //    funzione per creare cards dei Sushi 
 let wrapperCards=document.querySelector("#wrapperCards");
-function CreateCards(){
+function CreateCards(data){
+    //ripulire pag.
+wrapperCards.innerHTML="";
     data.forEach(element=>{
         let div=document.createElement('div');
         div.classList.add("col-3","me-2", "mb-4");
@@ -39,8 +41,9 @@ function CreateCards(){
         <div class="overflow-hidden">
           <img src="../media/carousel1.jpg" class="card-img-top card-img-zoom" alt="...">
         </div>
-        <h5 class="card-title">${element.categoria}</h5>
-        <p class="card-text">${element.pezzi}</p>
+        <h5 class="card-title">${element.tipo}</h5>
+        <p class="card-text">${element.pezzi}pz</p>
+        <p class="card-text">${element.prezzo}&euro;</p>
         </div>`;
         wrapperCards.appendChild(div);
 
@@ -48,8 +51,34 @@ function CreateCards(){
 
 
 }
-CreateCards();
+CreateCards(data);
+
+
+
+// gestione FILTRI PER CATEGORIA
+let btnCategories=document.querySelectorAll(".btnCategory"); //catturo tutti i bottoni.
+console.log(btnCategories);
+// creo il filtro
+function filterbyCategory(category){
+    let filtered=data.filter(sushi=>sushi.categoria==category)
+    CreateCards(filtered); 
+}
+
+btnCategories.forEach(button=>{ //per ogni bottone 
+    button.addEventListener('click', ()=>{
+        // console.log(button.id);
+        filterbyCategory(button.id);
+        
+       
+     
+    })
 
 })
+ 
+
+
+})
+
+
 
 

@@ -1,14 +1,16 @@
 [
     { "id": 1,
        "categoria": "Nigiri",
-        "tipo": "salmone",
+        "tipo": "Nigiri di salmone",
         "pezzi": 6,
         "prezzo": 10.99
+      
+       
      
     },
     {"id":2 ,
     "categoria":"Nigiri",
-        "tipo": "granchio",
+        "tipo": "Nigiri di granchio",
         "pezzi": 8,
         "prezzo": 12.99
        
@@ -16,7 +18,7 @@
     },
     {"id":3 ,
     "categoria":"Sashimi",
-        "tipo": "salmone",
+        "tipo": "Sashimi di salmone",
         "pezzi": 12,
         "prezzo": 15.99
       
@@ -25,7 +27,7 @@
     
     {"id":4 ,
     "categoria":"Hosomaki",
-        "tipo": "tonno",
+        "tipo": "granchio",
         "pezzi": 4,
         "prezzo": 7
      
@@ -33,28 +35,72 @@
 
     {"id": 5,
     "categoria":"Uramaki",
-        "tipo": "salmone cotto",
+        "tipo": "Uramaki salmone cotto",
         "pezzi": 6,
         "prezzo": 10
        
     },
 
     {"id": 6,
-    "categoria":"EbiTempura",
-        "tipo": "gamberetto cotto",
+    "categoria":"Carpaccio",
+        "tipo": "Carpaccio di Salmone",
+        "pezzi": 6,
+        "prezzo": 8
+      
+    },
+
+    {"id": 7,
+    "categoria":"Carpaccio",
+        "tipo": "Carpaccio di Tonno",
         "pezzi": 6,
         "prezzo": 8
       
     },
     
-    {"id":7 ,
-    "categoria":"Salmone",
-        "tipo": "tonno",
+    {"id":8 ,
+    "categoria":"Sashimi",
+        "tipo": "Sashimi di tonno",
         "pezzi": 12,
         "prezzo": 15.99
       
        
+    },
+
+    {"id": 9,
+    "categoria":"Uramaki",
+        "tipo": "Uramaki Tempura",
+        "pezzi": 8,
+        "prezzo": 14
+       
+    },
+
+
+    {"id":10 ,
+    "categoria":"Hosomaki",
+        "tipo": "California Roll",
+        "pezzi": 4,
+        "prezzo": 7
+     
+    },
+
+    {"id":11 ,
+    "categoria":"Hosomaki",
+        "tipo": "Spicy Roll",
+        "pezzi": 4,
+        "prezzo": 7
+     
+    },
+
+
+    {"id": 11,
+    "categoria":"Uramaki",
+        "tipo": "Uramaki di spigola",
+        "pezzi": 6,
+        "prezzo": 10
+       
     }
+
+
 
 
 ]
