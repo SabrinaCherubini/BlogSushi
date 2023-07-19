@@ -36,10 +36,10 @@ function CreateCards(data){
 wrapperCards.innerHTML="";
     data.forEach(element=>{
         let div=document.createElement('div');
-        div.classList.add("col-3","me-2", "mb-4");
+        div.classList.add("col-md-3","col-12","me-2", "mb-4");
         div.innerHTML=`<div class="card position-relative align-items-center justify-content-center  gradient-card" >
         <div class="overflow-hidden">
-          <img src="../media/carousel1.jpg" class="card-img-top card-img-zoom" alt="...">
+          <img src="../media/carousel2.jpg" class="card-img-top card-img-zoom" alt="foto">
         </div>
         <h5 class="card-title">${element.tipo}</h5>
         <p class="card-text">${element.pezzi}pz</p>
@@ -97,14 +97,31 @@ priceRange.innerHTML=`${Maxprice}&euro;`
 
 function filterByPrice(value){
     let filteredPrice=data.filter(element=>element.prezzo<=value);
+    console.log(filteredPrice);
+    CreateCards(filteredPrice);  //ci passiamo l'array filtrato che verra ciclato dalla funzione create
 }
 
     range.addEventListener('input',()=>{ 
         // console.log(range.value)
         filterByPrice(range.value);
+       priceRange.innerHTML=`${range.value}&euro;`;
       })
    
+
+
+    //   Ricerca per parola
+    let search=document.querySelector("#search");
    
+    function filterBySearch(word) {
+        let filteredSearch=data.filter(element=>element.tipo.toLowerCase().includes(word.toLowerCase()));
+       console.log(filteredSearch);
+       CreateCards(filteredSearch);
+    }
+   
+    search.addEventListener('input', () => {
+        filterBySearch(search.value);
+        // console.log(search.value);
+    })
    
 
 })

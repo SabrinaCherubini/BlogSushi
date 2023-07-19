@@ -4,15 +4,17 @@
         "tipo": "Nigiri di salmone",
         "pezzi": 6,
         "prezzo": 10.99
+    
       
        
      
     },
     {"id":2 ,
     "categoria":"Nigiri",
-        "tipo": "Nigiri di granchio",
+        "tipo": "Nigiri di Tonno",
         "pezzi": 8,
         "prezzo": 12.99
+       
        
     
     },
@@ -21,6 +23,7 @@
         "tipo": "Sashimi di salmone",
         "pezzi": 12,
         "prezzo": 15.99
+ 
       
        
     }, 
@@ -30,6 +33,7 @@
         "tipo": "granchio",
         "pezzi": 4,
         "prezzo": 7
+       
      
     },
 
@@ -38,6 +42,7 @@
         "tipo": "Uramaki salmone cotto",
         "pezzi": 6,
         "prezzo": 10
+      
        
     },
 
@@ -46,6 +51,7 @@
         "tipo": "Carpaccio di Salmone",
         "pezzi": 6,
         "prezzo": 8
+       
       
     },
 
@@ -55,6 +61,7 @@
         "pezzi": 6,
         "prezzo": 8
       
+      
     },
     
     {"id":8 ,
@@ -62,6 +69,7 @@
         "tipo": "Sashimi di tonno",
         "pezzi": 12,
         "prezzo": 15.99
+ 
       
        
     },
@@ -72,6 +80,7 @@
         "pezzi": 8,
         "prezzo": 14
        
+       
     },
 
 
@@ -80,6 +89,7 @@
         "tipo": "California Roll",
         "pezzi": 4,
         "prezzo": 7
+       
      
     },
 
@@ -89,6 +99,7 @@
         "pezzi": 4,
         "prezzo": 7
      
+     
     },
 
 
@@ -97,6 +108,7 @@
         "tipo": "Uramaki di spigola",
         "pezzi": 6,
         "prezzo": 10
+      
        
     }
 

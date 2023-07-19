@@ -75,8 +75,10 @@
                 </ul>
               </li>
             </ul>
+            <!-- Barra di ricerca per parola -->
             <form class="d-flex" role="search">
               <input
+              id="search"
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
@@ -107,7 +109,7 @@
  <div class="container-fluid">
     <div class="row bg-black justify-content-around pt-5">
       <!-- sez Accordion -->
-      <div class="col-3">
+      <div class="col-md-3 col-12">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -125,7 +127,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Filtro per prezzo
+        Range di prezzo
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -155,6 +157,7 @@
       <!-- sez cards -->
       
         <div class="col-md-9 col-12 d-flex flex-wrap justify-content-around" id="wrapperCards">
+      
          
          <!-- <div class="col-3 me-2 mb-2">
          
