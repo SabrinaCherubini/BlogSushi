@@ -45,6 +45,7 @@ h1{
 .star{
     color:#bba14f;
 }
+
 .border{
 border-color:var(--acc)  !important;
 border-width: 2px !important;
@@ -61,8 +62,7 @@ border-width: 2px !important;
     text-shadow: 2px 2px 5px orangered;
     animation-name: header;
     animation-duration: 6s;
-    
-}
+    }
 
 /* animation h1 */
 @keyframes header
@@ -87,6 +87,7 @@ border-width: 2px !important;
    margin: 0;
    padding: 0;
  }
+
  .swiper {
     width: 100%;
     padding-top: 50px;
@@ -121,12 +122,9 @@ border-width: 2px !important;
 
 .card {
   background: linear-gradient(to right, #09090a83, #e2c72dda);
-
   
- 
+  
 }
-
-
 
 
 /* bottoni categorie */
@@ -134,4 +132,3 @@ border-width: 2px !important;
   background: linear-gradient(to right, #09090a83, #e2c72dda);
 }
 
-/* Accordion */

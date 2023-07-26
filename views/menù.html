@@ -1,201 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Menù</title>
-    <!-- Link Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menù</title>
+  <!-- Link Bootstrap -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+  crossorigin="anonymous"
+  />
+  <!-- Link Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <!-- Link file CSS -->
+  <link rel="stylesheet" href="../resources/css/style.css" />
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-black fixed-top transparency">
+    <div class="container-fluid pnavbar">
+      <a class="navbar-brand" href="#"
+      ><img src="../media/Logo-yellow.png" class="Logo" />
+    </a>
+    <!-- per mobile -->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!--  -->
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+      <li class="nav-item">
+        <a
+        class="nav-link link active text-light"
+        aria-current="page"
+        href="index.html"
+        >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        
+        <a class="nav-link link text-light mx-5"  href="menù.html">Menù</a>
+        
+      </li>
+      <li class="nav-item dropdown">
+        <a
+        class="nav-link link dropdown-toggle text-light"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        >
+        Prenota
+      </a>
+      <ul class="dropdown-menu text-light">
+        <li><a class="dropdown-item" href="#">Ordine</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Tavolo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- Barra di ricerca per parola -->
+  <form class="d-flex" role="search">
+    <input
+    id="search"
+    class="form-control me-2"
+    type="search"
+    placeholder="Search"
+    aria-label="Search"
     />
-    <!-- Link Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Link file CSS -->
-    <link rel="stylesheet" href="../resources/css/style.css" />
-  </head>
-  <body>
+    <button class="btn btn-outline-light" type="submit">Search</button>
+  </form>
+</div>
+</div>
+</nav>
 
-    <nav class="navbar navbar-expand-lg bg-black fixed-top transparency">
-        <div class="container-fluid pnavbar">
-          <a class="navbar-brand" href="#"
-            ><img src="../media/Logo-yellow.png" class="Logo" />
-          </a>
-          <!-- per mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--  -->
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link link active text-light"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-           
-                <a class="nav-link link text-light mx-5"  href="menù.html">Menù</a>
-          
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                 Prenota
-                </a>
-                <ul class="dropdown-menu text-light">
-                  <li><a class="dropdown-item" href="#">Ordine</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Tavolo</a></li>
-                </ul>
-              </li>
-            </ul>
-            <!-- Barra di ricerca per parola -->
-            <form class="d-flex" role="search">
-              <input
-              id="search"
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      
-      <!-- sez bottoni filtri per categoria-->
+<!-- sez bottoni filtri per categoria-->
 <header class="container-fluid bg-black">
   <div class="col-12 margin text-center">
- <h1>il nostro menù</h1>
-</div>
-         <div class="row justify-content-center" id="wrapper">
-            <!-- <div class="col-md-12 col-12"> 
-                 <h3 class="btn btn-outline-light">Sushi cotto</h3>
-                <h3 class="btn btn-outline-light">Sushi crudo</h3>
-                <h3 class="btn btn-outline-light">Sashimi</h3>
-           </div> -->
-      </div> 
- </header>
+    <h1>il nostro menù</h1>
+  </div>
+  <div class="row justify-content-center" id="wrapper">
+    <!-- <div class="col-md-12 col-12"> 
+      <h3 class="btn btn-outline-light">Sushi cotto</h3>
+      <h3 class="btn btn-outline-light">Sushi crudo</h3>
+      <h3 class="btn btn-outline-light">Sashimi</h3>
+    </div> -->
+  </div> 
+</header>
 
- 
- <!-- sez menù  -->
- <div class="container-fluid">
-    <div class="row bg-black justify-content-around pt-5">
-      <!-- sez Accordion -->
-      <div class="col-md-3 col-12">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+<!-- sez menù  -->
+<div class="container-fluid">
+  <div class="row bg-black justify-content-around pt-5">
+    <!-- sez Accordion -->
+    <div class="col-md-3 col-12">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Numero pezzi
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
-          <!-- filtro per prezzo -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Range di prezzo
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <!-- range prezzo -->
-                <label for="customRange2" class="form-label">Example range</label>
-                 <input type="range" id="Range" class="form-range" min="0" max="20" id="customRange2" value="20"> 
-                 <p class="text-dark lead" id="priceRange">20&euro;</p>
-              </div>
+        </div>
+        <!-- filtro per prezzo -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Range di prezzo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- range prezzo -->
+              <label for="customRange2" class="form-label">Example range</label>
+              <input type="range" id="Range" class="form-range" min="0" max="20" id="customRange2" value="20"> 
+              <p class="text-dark lead" id="priceRange">20&euro;</p>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Ricerca
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Ricerca
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
       </div>
-
-      <!-- sez cards -->
-      
-        <div class="col-md-9 col-12 d-flex flex-wrap justify-content-around" id="wrapperCards">
-      
-         
-         <!-- <div class="col-3 me-2 mb-2">
-         
-            <div class="card position-relative align-items-center justify-content-center  gradient-card" >
-              <div class="overflow-hidden">
-                <img src="../media/carousel1.jpg" class="card-img-top card-img-zoom" alt="...">
-              </div>
-              <h5 class="card-title">Dragon Roll</h5>
-              <p class="card-text">8pz</p>
-              </div>
-            </div> -->
-             </div>
-            </div>
-            
-         
-              
-          
-
-
-            
-  </div>
     </div>
-
     
- </div>
+    <!-- sez cards -->
     
-    
+    <div class="col-md-9 col-12 d-flex flex-wrap justify-content-around" id="wrapperCards">
+      
+      
+      <!-- <div class="col-3 me-2 mb-2">
+        
+        <div class="card position-relative align-items-center justify-content-center  gradient-card" >
+          <div class="overflow-hidden">
+            <img src="../media/carousel1.jpg" class="card-img-top card-img-zoom" alt="...">
+          </div>
+          <h5 class="card-title">Dragon Roll</h5>
+          <p class="card-text">8pz</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+</div>
 
-    <!-- Script Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Script JS -->
-    <script src="../resources/js/menù.js"></script>
-  </body>
-   <!-- Navbar -->
 
-   
+</div>
+
+
+
+<!-- Script Bootstrap -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"
+></script>
+<!-- Script JS -->
+<script src="../resources/js/menù.js"></script>
+</body>
+<!-- Navbar -->
+
+
 </html>
